@@ -1,0 +1,47 @@
+@import url("../../style.less");
+
+.logo{
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30%;
+}
+.logo-title{
+	font-size: 48rpx;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 8%;
+	color: @font-color;
+}
+.logo-subtitile{
+	font-size: 34rpx;
+	text-align: center;
+	margin-top: 20rpx;
+	color: @font-color;
+}
+.login-btn{
+	width: 60%;
+	// btn 相对于整体View的位置
+	position: absolute;
+	left: 20%;
+	bottom: 20%;
+	box-sizing: border-box;
+	color: #FFF;
+	background-color: @background-color;
+	&:active{
+		background-color: @background-color-active;
+	}
+}
+.register-container{
+	position: absolute;
+	bottom: 50rpx;
+	width: 100%;
+	text-align: center;
+	font-size: 30rpx;
+	color: @font-color;
+	// 父样式中的子样式
+	.register{
+		color: @background-color;
+	}
+}

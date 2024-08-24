@@ -1,0 +1,46 @@
+@import url("../../style.less");
+// camera 和 image 控件的大小是一样的
+.camera,.image{
+	width: 100%;
+	height: 400px;
+}
+// 按钮所在标签的样式
+.operate-container{
+	// 设置成flex布局
+	display: flex;
+	// 排版为居中显示
+	justify-content: center;
+	margin-top: 50rpx;
+	// 规定两个按钮的样式
+	.btn{
+		width: 40%;
+		margin: 0;
+		// 规定第一个按钮的样式
+		&:first-child{
+			margin-right: 30rpx;
+		}
+	}
+}
+
+// 提示文字的样式
+.notice-container{
+	// 加入内填充，整体规范些
+	padding: 40rpx 60rpx;
+	// 标题文字样式
+	.notice{
+		font-size: 40rpx;
+		color: @font-color;
+		font-weight: bold;
+		// 让text标签 独占一行
+		display: block;
+		margin-bottom: 15rpx;
+	}
+	// 详细信息的样式
+	.desc{
+		display: block;
+		font-size: 32rpx;
+		color: @desc-color;
+		// 行间距
+		line-height: 1.6;
+	}
+}
